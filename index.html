@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
     <title>Extra Task</title>
   </head>
   <body>
@@ -17,12 +20,14 @@
         <p>ObjectPlus</p>
       </div>
       <div class="actions">
+        
         <select name="farms" id="farm-select">
-          <option value="Rasa Creek"><i class="fa-solid fa-tractor"></i>Farm <br/> Rasa Creek</option>
+          <option value="Rasa Creek" selected>Farm Rasa Creek</option>
           <option value="Pobiti Kamani"><i class="fa-solid fa-tractor"></i>Farm Pobiti Kamani</option>
           <option value="Kichevo"><i class="fa-solid fa-tractor"></i>Farm  Kichevo</option>
           <option value="Kranevo"><i class="fa-solid fa-tractor"></i>Farm  Kranevo</option>
         </select>
+      
         <nav>
           <ul id="nav-icons">
             <li><i class="fa-solid fa-question"></i></li>
@@ -83,23 +88,29 @@
           </article>
           <article class="solution-card">
             <img src="assets/photo-atfarm.jpg" class="solution-image" />
+            <div class="info-holder">
             <h2>Atfarm</h2>
             <h4>Short description</h4>
             <p>Longer description</p>
+          </div>
             <a href="#">Open Atfarm</a>
           </article>
           <article class="solution-card">
             <img src="assets/photo-tankmix.jpg" class="solution-image" />
+          <div class="info-holder">
             <h2>TankMix</h2>
             <h4>Short description</h4>
             <p>Longer description</p>
+          </div>
             <a href="#">Open TankMix</a>
           </article>
           <article class="solution-card">
             <img src="assets/photo-rewards.jpg" class="solution-image" />
+            <div class="info-holder">
             <h2>Rewards</h2>
             <h4>Short description</h4>
             <p>Longer description</p>
+          </div>
             <a href="#">Open Rewards</a>
           </article>
           <article class="solution-card">
@@ -114,16 +125,16 @@
           </article>
           </div>
         </section>
-        <section id="featured-solutions">
+        <section id="featured-solutions-section">
           <p class="greyed-out">Featured solution</p>
           <h3>Optimize your grassland</h3>
           <section class="featured-subsection">
             <article class="wide-card">
               <img src="#" />
-              <h2>Name of card</h2>
+              <h2>GrassN</h2>
               <p>Recommended</p>
-              <h4>short description</h4>
-              <p>Longer description</p>
+              <h4>Optimal grassland management</h4>
+              <p>Plan compliant fertilization and optimal harvest time for grassland.</p>
               <ul class="related-topics">
                 <li>Grassland</li>
                 <li>Mineral fertilization</li>
