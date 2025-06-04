@@ -1,0 +1,154 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: rgb(2, 2, 132);
+    color: white;
+    width: 100%;
+    align-items: center;
+}
+
+.logoHolder{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.actions{
+    display: flex;
+    gap: 40px;
+}
+
+#farm-select{
+    background-color: rgb(1, 1, 93);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#nav-icons{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding: 10px;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 100vh;
+}
+
+.radio-buttons-grp{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+aside label{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    align-self: flex-start;
+}
+
+main{
+    flex: 1;
+    background-color: rgb(229, 226, 226);
+}
+
+#main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+#hero-section{
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://images.unsplash.com/photo-1533460004989-cef01064af7e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3JlZW4lMjBncmFzc3xlbnwwfHwwfHx8MA%3D%3D");
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 40px;
+}
+
+.heading-holder{
+    width: 70%;
+}
+
+#hero-section h1{
+    font-size: 1.7em;
+}
+#hero-section h3{
+    font-size: 1.1em;
+    text-align: left;
+    font-weight: 400;
+}
+
+#full-range-section{
+    min-width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 35px;
+    overflow: hidden;
+}
+
+#full-range-section img{
+    border-radius: 9px 9px 0px 0px;
+}
+
+.text-holder{
+    flex: 0 0 100%;
+}
+
+.solutions-card-holder{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.solution-card{
+    display: flex;
+    height: 350px;
+    max-width: 200px;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 9px;
+}
+
+.solution-card .info-holder{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+
+
+
+
