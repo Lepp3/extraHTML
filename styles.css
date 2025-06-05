@@ -92,7 +92,7 @@ aside{
 .aside-button{
     padding: 12px;
     border-radius: 8px;
-    color: rgb(6, 169, 223);
+    color: rgb(4, 151, 200);
     font-weight: 500;
     width: 70%;
     display: flex;
@@ -214,14 +214,13 @@ main{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding: 35px;
+    padding: 50px;
     overflow: hidden;
 }
 
 .featured-subsection{
     display: flex;
     gap: 20px;
-    padding: 10px;
     justify-content: space-between;
 }
 
@@ -450,7 +449,6 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: red;
     height: 100%;
 }
 
@@ -494,4 +492,40 @@ main{
 }
 
 
+#news-section{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 50px;
+    width: 100%;
+    min-height: 300px;
+}
+
+.news-headings{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.news-card-holder{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.news-card{
+    display: flex;
+    height: 350px;
+    max-width: 250px;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 9px;
+    background-color: rgba(247, 245, 245, 0.925);
+}
+
+.news-card img{
+    border-radius: 9px 9px 0px 0px;
+    width: 248px;
+    height: 100px;
+}
 
