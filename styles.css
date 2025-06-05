@@ -8,7 +8,7 @@
 
 
 body{
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-wrap: wrap;
     
@@ -37,6 +37,7 @@ header{
     display: flex;
     gap: 5px;
     align-items: center;
+    font-size: 4em;
 }
 
 .actions{
@@ -52,6 +53,11 @@ header{
     border: 1px solid black;
 }
 
+.farm-name{
+    display: flex;
+    
+}
+
 #nav-icons{
     display: flex;
     list-style: none;
@@ -63,7 +69,6 @@ aside{
     display: flex;
     flex-direction: column;
     width: 200px;
-    height: 100%;
     justify-content: space-between;
 }
 
@@ -212,6 +217,7 @@ main{
     border: 2px solid lightgray;
     border-radius: 9px;
     background-color: rgba(247, 245, 245, 0.925);
+    flex: 1;
 }
 
 
@@ -235,6 +241,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 6px;
+    
 }
 
 .wide-card-text-holder-headings{
@@ -327,6 +334,147 @@ main{
     display: flex;
     justify-content: flex-end;
     padding: 20px;
+}
+
+
+#events-section{
+    display: flex;
+    gap: 15px;
+    padding: 35px;
+    width: 100%;
+    min-height: 300px;
+}
+
+#events{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.events-top-part{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+.hollow-action-button{
+    border: 1px solid rgb(6, 169, 223);
+    padding: 12px;
+    border-radius: 6px;
+    color: rgb(6, 169, 223);
+    font-weight: 500;
+}
+
+.event-card-holder{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.event-card{
+   display: flex;
+    height: 350px;
+    max-width: 250px;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 9px;
+    background-color: rgba(247, 245, 245, 0.925);
+}
+
+.event-card img{
+    width: 100%;
+    height: 40%;
+    border-radius: 9px 9px 0px 0px;
+}
+
+.event-card-upper-part{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 2px solid gray;
+    height: 90%;
+}
+
+.event-card-text-holder{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 5px;
+    height: 50%;
+}
+
+.date{
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+
+
+
+.event-card-down-part{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    align-items: center;
+    
+}
+
+
+
+#podcasts{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+}
+
+.podcasts-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: red;
+    height: 100%;
+}
+
+
+
+
+.podcasts-top-part{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+
+
+.podcast-card{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 9px;
+    background-color: rgba(247, 245, 245, 0.925);
+}
+
+.podcast-card-top-part{
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+    border-bottom: 1px solid lightgray;
+}
+
+.podcast-card-text-holder{
+    width: 70%;
+}
+
+
+.podcast-card img{
+    width: 30%;
+    height: 40%;
+    border-radius: 9px 9px 0px 0px;
 }
 
 

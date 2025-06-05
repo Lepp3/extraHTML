@@ -22,10 +22,20 @@
       <div class="actions">
         
         <select name="farms" id="farm-select">
-          <option value="Rasa Creek" selected>Farm Rasa Creek</option>
-          <option value="Pobiti Kamani">Farm Pobiti Kamani</option>
-          <option value="Kichevo">Farm  Kichevo</option>
-          <option value="Kranevo">Farm  Kranevo</option>
+          <button><selectedcontent></selectedcontent></button>
+          <option >
+            
+            <div class="farm-name"><i class="fa-solid fa-house"></i>Farm <br> Rasa Creek</div>
+          </option>
+          <option >
+           <div class="farm-name"><i class="fa-solid fa-house"></i>Farm <br> Rakitnika</div>
+          </option>
+          <option >
+            <div class="farm-name"><i class="fa-solid fa-house"></i>Farm <br> Pobiti Kamani</div>
+          </option>
+          <option >
+            <div class="farm-name"><i class="fa-solid fa-house"></i>Farm <br> Chaika</div>
+          </option>
         </select>
       
         <nav>
@@ -202,36 +212,65 @@
         </section>
         <section id="events-section">
           <section id="events">
+            <div class="events-top-part">
             <h2>Events</h2>
-            <a href="#">See All Events</a>
+            <a href="#" class="hollow-action-button">See All Events</a>
+            </div>
             <div class="event-card-holder">
               <article class="event-card">
-                <img href="#" />
-                <h2>Card heading</h2>
-                <h4>short descript</h4>
-                <p>Date</p>
-                <a href="#">Read More</a>
+                <div class="event-card-upper-part">
+                <img src="assets/dirty-hands.jpg" />
+                <div class="event-card-text-holder">
+                <h2>Brand new research for potato fields</h2>
+                <p class="greyed-out">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="date">26 June 2023</p>
+                </div>
+                </div>
+                <div class="event-card-down-part">
+                <a href="#" class="action-button">Read More</a>
+                </div>
               </article>
               <article class="event-card">
-                <img href="#" />
-                <h2>Card heading</h2>
-                <h4>short descript</h4>
-                <p>Date</p>
-                <a href="#">Read More</a>
+                <div class="event-card-upper-part">
+                <img src="assets/news-photo.jpg" />
+                <div class="event-card-text-holder">
+                <h2>Meet with us at Coachella 2023</h2>
+                <p class="greyed-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque doloribus suscipit quae?</p>
+                <p class="date">26 June 2023</p>
+                  </div>
+                </div>
+                <div class="event-card-down-part">
+                <a href="#" class="action-button">Read More</a>
+                </div>
               </article>
             </div>
           </section>
           <section id="podcasts">
+            <div class="podcasts-top-part">
             <h2>Podcasts</h2>
             <a href="#">See All Podcasts</a>
+            </div>
+            <div class="podcasts-holder">
             <article class="podcast-card">
-              <img href="#" />
+              <div class="podcast-card-top-part">
+              <img src="assets/podcast-photo.jpg" />
+              <div class="podcast-card-text-holder">
+              <p class="greyed-out">Episode #17</p>
+              <h2>Compliance and labour:take care of our neighbours.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, alias?</p>
+              <p class="date">26 Jun 2023</p>
+              </div>
+              </div>
+              <a href="#" class="action-button">Listen</a>
+            </article>
+            <article class="podcast-card">
               <p class="greyed-out">Episode #17</p>
               <h2>Podcast name</h2>
               <h4>short descript</h4>
-              <p>Date</p>
-              <a href="#">Listen</a>
+              <p class="date">25 Jun 2023</p>
+              <a href="#" class="action-button">Listen</a>
             </article>
+            </div>
           </section>
         </section>
         <section class="news-section">
