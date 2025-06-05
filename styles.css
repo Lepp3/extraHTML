@@ -68,21 +68,37 @@ header{
 aside{
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 170px;
     justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.radio-buttons-grp{
+.side-navigation{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    list-style: none;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
 }
 
-aside label{
+.side-navigation li{
+    width: 100%;
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    align-self: flex-start;
+    justify-content: center;
+}
+
+.aside-button{
+    padding: 12px;
+    border-radius: 8px;
+    color: rgb(6, 169, 223);
+    font-weight: 500;
+    width: 70%;
+    display: flex;
+    gap: 10px;
+    background-color: rgb(183, 225, 239);
+    
 }
 
 main{
