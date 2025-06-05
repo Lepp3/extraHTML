@@ -3,8 +3,9 @@
     padding: 0;
     font-size: 16px;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
 }
+
+
 
 body{
     height: 100vh;
@@ -61,8 +62,9 @@ header{
 aside{
     display: flex;
     flex-direction: column;
-    width: 350px;
-    height: 100vh;
+    width: 200px;
+    height: 100%;
+    justify-content: space-between;
 }
 
 .radio-buttons-grp{
@@ -116,17 +118,19 @@ main{
 }
 
 #full-range-section{
-    min-width: 100%;
+    width: 100%;
     min-height: 300px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    padding: 35px;
+    gap: 20px;
+    padding: 50px;
     overflow: hidden;
 }
 
 #full-range-section img{
     border-radius: 9px 9px 0px 0px;
+    width: 248px;
+    height: 100px;
 }
 
 .text-holder{
@@ -135,17 +139,24 @@ main{
 
 .solutions-card-holder{
     display: flex;
-    gap: 25px;
+   justify-content: space-between;
     flex-wrap: wrap;
+     gap: 20px;
 }
 
 .solution-card{
     display: flex;
     height: 350px;
-    max-width: 200px;
+    max-width: 250px;
     flex-direction: column;
     border: 1px solid gray;
     border-radius: 9px;
+    background-color: rgba(247, 245, 245, 0.925);
+}
+
+.solution-card-upper-part{
+    border-bottom: 2px solid lightgray;
+    height: 80%;
 }
 
 .solution-card .info-holder{
@@ -155,8 +166,29 @@ main{
     gap: 7px;
 }
 
+.solution-card-headings{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    
+}
+
+.solution-card .info-holder .small-icon{
+    color: blue;
+    font-weight: 200;
+    border: 1px solid blue;
+    padding: 3px;
+}
+
+
+.solution-card-down-part{
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px;
+}
+
 #featured-solutions-section{
-    min-width: 100%;
+    width: 100%;
     min-height: 300px;
     display: flex;
     flex-direction: column;
@@ -168,6 +200,8 @@ main{
 .featured-subsection{
     display: flex;
     gap: 20px;
+    padding: 10px;
+    justify-content: space-between;
 }
 
 .wide-card{
@@ -175,9 +209,54 @@ main{
     height: 350px;
     width: 60%;
     flex-direction: column;
-    border: 1px solid gray;
+    border: 2px solid lightgray;
     border-radius: 9px;
-    background-color: rgba(231, 231, 231, 0.925);
+    background-color: rgba(247, 245, 245, 0.925);
+}
+
+
+.wide-card img{
+    max-height: 200px;
+    max-width: 150px;
+    border-radius: 10px;
+      
+}
+
+
+.wide-card-upper-part{
+    display: flex;
+    height: 80%;
+    padding: 10px;
+    gap: 6px;
+    border-bottom: 2px solid gray;
+}
+
+.wide-card-text-holder{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.wide-card-text-holder-headings{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.wide-card-text-holder-headings .small-icon{
+    color: blue;
+    font-weight: 200;
+    border: 1px solid blue;
+    padding: 3px;
+}
+
+.wide-card-text-holder-headings .recommended-option{
+    border: 1px solid lightblue;
+    padding: 4px;
+    border-radius: 4px;
+    color: blue;
+    background-color: lightblue;
+    font-weight: 500;
 }
 
 .related-topics{
@@ -190,9 +269,65 @@ main{
     border: 1px solid gray;
     padding: 11px;
     border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    width: max-content;
+    background-color: rgb(236, 235, 235);
 }
 
 
+.wide-card-down-part{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.greyed-out{
+    color: rgb(172, 171, 171)
+}
+
+.action-button{
+    font-weight: 700;
+    color: rgb(6, 169, 223)
+}
+
+.narrow-card{
+    display: flex;
+    height: 350px;
+    width: 35%;
+    flex-direction: column;
+    border: 2px solid lightgray;
+    border-radius: 9px;
+    background-color: rgba(247, 245, 245, 0.925);
+    
+}
+
+.narrow-card img{
+    max-width: 150px;
+    max-height: 140px;
+    border-radius: 10px;
+}
+
+.narrow-card-upper-part{
+    display: flex;
+    height: 80%;
+    padding: 20px;
+    gap: 6px;
+    border-bottom: 2px solid gray;
+}
+
+.narrow-card-headings{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.narrow-card-down-part{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
 
 
 
