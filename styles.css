@@ -6,6 +6,7 @@
   font-size: 16px;
   box-sizing: border-box;
   text-decoration: none;
+  
 }
 
 :root {
@@ -113,7 +114,6 @@ header {
 
 .card--podcast .card__img {
   width: 30%;
-  height: 90%;
   border-radius: 9px;
 }
 
@@ -255,6 +255,15 @@ aside {
   width: 100%;
   justify-content: center;
   font-size: 1.2em;
+}
+
+.bottomPart{
+  border-top: 2px solid var(--border-color);
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .aside-button.active {
