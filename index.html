@@ -135,7 +135,9 @@
                   </p>
                 </div>
                 <div class="card--action">
-                  <a href="#" class="action-button">Go to Atfarm <i class="fa-solid fa-gauge"></i></a>
+                  <a href="#" class="action-button"
+                    >Go to Atfarm <i class="fa-solid fa-gauge"></i
+                  ></a>
                 </div>
               </article>
 
@@ -237,11 +239,8 @@
               </article>
             </section>
           </section>
-          <section
-            id="events-section"
-            class="page-section page-section--events"
-          >
-            <div class="page-section__headings">
+          <section class="page-section">
+            <div class="page-section__headings split">
               <div class="page-section__headings__half">
                 <h2>Events</h2>
                 <a href="#" class="hollow-action-button">See All Events</a>
@@ -251,8 +250,8 @@
                 <a href="#" class="hollow-action-button">See All Podcasts</a>
               </div>
             </div>
-            <section id="events" class="page-section__events">
-              <div class="page-section__card-holder">
+            <div class="page-section--events">
+              <section class="page-section__card-holder events">
                 <article class="card card--event">
                   <div class="event-card-upper-part">
                     <img src="assets/dirty-hands.jpg" class="card__img" />
@@ -284,38 +283,46 @@
                     <a href="#" class="action-button">Read More</a>
                   </div>
                 </article>
-              </div>
-            </section>
-            <section class="page-section__podcasts">
-              <div class="page-section__card-holder">
+              </section>
+              <section class="page-section__card-holder podcasts">
                 <article class="card card--podcast">
-                  <div class="podcast-card-top-part">
-                    <img src="assets/podcast-photo.jpg" class="card__img" />
-                    <div class="podcast-card-text-holder">
-                      <p class="greyed-out">Episode #17</p>
-                      <h2>
-                        Compliance and labour: take care of our neighbours.
-                      </h2>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aliquam, alias?
-                      </p>
-                      <p class="date">26 Jun 2023</p>
-                    </div>
-                  </div>
-                  <a href="#" class="action-button">Listen</a>
-                </article>
-                <article class="card card--podcast">
+                  <div class="podcast-card-top">
+                  <img src="assets/podcast-photo.jpg" class="card__img" />
+                  <div class="podcast-card-text">
                   <p class="greyed-out">Episode #17</p>
-                  <h2>Podcast name</h2>
-                  <h4>short descript</h4>
-                  <p class="date">25 Jun 2023</p>
-                  <a href="#" class="action-button">Listen</a>
+                  <h2>Compliance and labour: take care of our neighbours.</h2>
+                  <p class="greyed-out">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquam, alias?
+                  </p>
+                  <p class="date">26 Jun 2023</p>
+                  </div>
+                  </div>
+                  <div class="card--action">
+                    <a href="#" class="action-button">Listen</a>
+                  </div>
                 </article>
-              </div>
-            </section>
+                <article class="card card--podcast">
+                  <div class="podcast-card-top">
+                  <div class="podcast-card-text">
+                  <p class="greyed-out">Episode #17</p>
+                  <h2>Compliance and labour: take care of our neighbours.</h2>
+                  <p class="greyed-out">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquam, alias?
+                  </p>
+                  <p class="date">26 Jun 2023</p>
+                  </div>
+                  </div>
+                  <div class="card--action">
+                    <a href="#" class="action-button">Listen</a>
+                  </div>
+                </article>
+                
+              </section>
+            </div>
           </section>
-          <section id="news-section" class="page-section">
+          <!-- <section id="news-section" class="page-section">
             <div class="page-section__headings">
               <h2>News</h2>
               <a href="#" class="hollow-action-button">See All News</a>
@@ -371,7 +378,7 @@
                 <a href="#" class="action-button">Read More</a>
               </article>
             </div>
-          </section>
+          </section> -->
         </section>
       </main>
     </div>

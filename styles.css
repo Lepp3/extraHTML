@@ -28,7 +28,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 
 h3 {
@@ -71,16 +71,19 @@ header {
 }
 
 .card--solutions,
-.card--event,
 .card--news {
   width: 250px;
   justify-content: space-between;
 }
 
+.card--event {
+  width: 300px;
+  height: 450px;
+}
+
 .card--wide {
   width: 60%;
   display: flex;
-  
 }
 
 .card--narrow {
@@ -88,7 +91,8 @@ header {
 }
 
 .card--podcast {
-  width: 100%;
+  flex: 1 1;
+  padding: 10px;
 }
 
 .card__img {
@@ -109,12 +113,14 @@ header {
 
 .card--podcast .card__img {
   width: 30%;
-  height: 40%;
+  height: 90%;
+  border-radius: 9px;
 }
+
+
 
 .card--wide .card__img,
 .card--narrow .card__img {
-  width: 150px;
   border-radius: 10px;
 }
 
@@ -123,21 +129,46 @@ header {
   width: 300px;
 }
 
-.card--wide__info{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding-left: 20px;
+.card--wide__info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 20px;
 }
 
 .card--narrow .card__img {
-  max-height: 140px;
+  height: 160px;
+  flex: 1 1
 }
 
-.page-section__headings p {
-  font-size: 1.2em;
-  opacity: 0.5;
-  font-weight: 600;
+.podcast-card-text{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.page-section__headings .page-section__headings__half {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-section--events {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.page-section__card-holder.events {
+  flex: 1 1 45%;
+}
+
+.page-section__card-holder.podcasts {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 45%;
 }
 
 select,
@@ -164,7 +195,7 @@ select,
 #nav-icons {
   display: flex;
   list-style: none;
-  gap: 15px;
+  gap: 25px;
   padding: 10px;
 }
 
@@ -210,17 +241,22 @@ main {
 
 #main-content {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.podcast-card-top{
+  display: flex;
+  gap: 10px;
+  min-height: 70%;
 }
 
 .page-section {
   width: 100%;
-  min-height: 300px;
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  gap: 25px;
   padding: 80px;
-  overflow: hidden;
 }
 
 .page-section--hero {
@@ -230,6 +266,7 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   color: white;
+  height: 300px;
 }
 
 .heading-holder {
@@ -246,11 +283,10 @@ main {
   flex: 0 0 100%;
 }
 
-
 .card--solutions .info-holder {
   padding: 15px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 15px;
 }
 
@@ -262,8 +298,13 @@ main {
 
 .page-section__card-holder {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 10px;
+  gap: 25px;
+}
+
+.page-section__card-holder.split {
+  background-color: red;
 }
 
 .small-icon {
@@ -356,24 +397,6 @@ main {
   gap: 10px;
 }
 
-
-.page-section--events {
-  flex-direction: row;
-}
-
-#events {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-
-.events-top-part {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px;
-  align-items: center;
-}
-
 .hollow-action-button {
   border: 1px solid rgb(6, 169, 223);
   padding: 12px;
@@ -386,15 +409,14 @@ main {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border-bottom: 2px solid gray;
   height: 90%;
 }
 
 .event-card-text-holder {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding: 5px;
+  gap: 12px;
+  padding: 15px;
   height: 50%;
 }
 
@@ -403,33 +425,11 @@ main {
   font-weight: 600;
 }
 
-.event-card-down-part {
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px;
-  align-items: center;
-}
-
-#podcasts {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-
-.podcasts-top-part {
+.page-section__headings.split {
   display: flex;
   justify-content: space-between;
-  padding: 15px;
-  align-items: center;
+  width: 100%;
+  gap: 40px;
 }
 
-.podcast-card-top-part {
-  display: flex;
-  padding: 10px;
-  gap: 15px;
-  border-bottom: 1px solid lightgray;
-}
 
-.podcast-card-text-holder {
-  width: 70%;
-}
