@@ -20,7 +20,7 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 1900px;
-  /* margin: 200px auto; */
+  margin: auto;
 }
 
 h1 {
@@ -67,18 +67,18 @@ header {
   border-radius: 9px;
   background-color: white;
   border: 2px solid var(--border-color);
-  height: 380px;
+  height: 450px;
 }
 
 .card--solutions,
 .card--news {
-  width: 250px;
+  width: 280px;
   justify-content: space-between;
 }
 
 .card--event {
-  width: 300px;
-  height: 450px;
+  width: 350px;
+  height: 500px;
 }
 
 .card--wide {
@@ -91,7 +91,7 @@ header {
 }
 
 .card--podcast {
-  flex: 1 1;
+  flex: 1 1 45%;
   padding: 10px;
 }
 
@@ -117,8 +117,6 @@ header {
   border-radius: 9px;
 }
 
-
-
 .card--wide .card__img,
 .card--narrow .card__img {
   border-radius: 10px;
@@ -138,10 +136,10 @@ header {
 
 .card--narrow .card__img {
   height: 160px;
-  flex: 1 1
+  flex: 1 1;
 }
 
-.podcast-card-text{
+.podcast-card-text {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -153,12 +151,22 @@ header {
   justify-content: space-between;
 }
 
+.page-section__headings.full {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .page-section--events {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
   gap: 40px;
+}
+
+.page-section__card-holder.news {
+  width: 100%;
 }
 
 .page-section__card-holder.events {
@@ -176,6 +184,8 @@ select,
   appearance: base-select;
 }
 
+
+
 #farm-select {
   background-color: rgb(1, 1, 93);
   color: white;
@@ -183,6 +193,8 @@ select,
   border: 1px solid black;
   width: 240px;
   text-align: left;
+  align-items: center;
+  padding: 5px;
 }
 
 .farm-name {
@@ -206,6 +218,9 @@ aside {
   justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 30px;
+  min-height: 100vh;
+   /* position: relative; */
+    z-index: 1;
 }
 
 .side-navigation {
@@ -226,6 +241,25 @@ aside {
 .aside-button {
   padding: 12px;
   border-radius: 8px;
+  color: gray;
+  font-weight: 500;
+  width: 70%;
+  display: flex;
+  gap: 10px;
+}
+
+.restart{
+  display: flex;
+  color: gray;
+  gap: 5px;
+  width: 100%;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+.aside-button.active {
+  padding: 12px;
+  border-radius: 8px;
   color: #146ecf;
   background-color: var(--nav-buttons-background-color);
   font-weight: 500;
@@ -244,7 +278,7 @@ main {
   flex-wrap: wrap;
 }
 
-.podcast-card-top{
+.podcast-card-top {
   display: flex;
   gap: 10px;
   min-height: 70%;
@@ -253,7 +287,6 @@ main {
 .page-section {
   width: 100%;
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
   gap: 25px;
   padding: 80px;
@@ -267,10 +300,6 @@ main {
   background-position: center;
   color: white;
   height: 300px;
-}
-
-.heading-holder {
-  width: 70%;
 }
 
 #hero-section p {
@@ -300,7 +329,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 25px;
+  gap: 20px;
 }
 
 .page-section__card-holder.split {
@@ -432,4 +461,41 @@ main {
   gap: 40px;
 }
 
+@media screen and (max-width: 1100px){
+  .page-frame {
+    flex-direction: column;
+  }
 
+  aside {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 20px;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    min-height: auto;
+  }
+
+  .side-navigation {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .side-navigation li {
+    width: auto;
+  }
+
+  .aside-button {
+    width: auto;
+    white-space: nowrap;
+  }
+
+  .restart {
+    margin-left: auto;
+  }
+
+  
+}
