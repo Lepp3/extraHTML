@@ -68,7 +68,7 @@ header {
   border-radius: 9px;
   background-color: white;
   border: 2px solid var(--border-color);
-  height: 450px;
+  height: auto;
 }
 
 .card--solutions,
@@ -92,8 +92,7 @@ header {
 }
 
 .card--podcast {
-  flex: 1 1 45%;
-  padding: 10px;
+  width: 100%;
 }
 
 .card__img {
@@ -142,6 +141,7 @@ header {
 .podcast-card-text {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 5px;
 }
 
@@ -175,7 +175,7 @@ header {
 
 .page-section__card-holder.podcasts {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   flex: 1 1 45%;
 }
 
@@ -309,6 +309,8 @@ main {
   background-position: center;
   color: white;
   height: 300px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #hero-section p {
