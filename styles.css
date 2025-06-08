@@ -84,11 +84,12 @@ header {
 
 .card--wide {
   width: 60%;
-  display: flex;
+  flex-wrap: wrap;
 }
 
 .card--narrow {
   width: 35%;
+  flex-wrap: wrap;
 }
 
 .card--podcast {
@@ -123,19 +124,21 @@ header {
 
 .card--wide .card__img {
   height: 200px;
-  width: 300px;
+  width: 30%;
 }
 
 .card--wide__info {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
   gap: 15px;
   padding-left: 20px;
 }
 
 .card--narrow .card__img {
   height: 160px;
-  flex: 1 1;
+  width: 50%;
+  flex: 1 1 auto;
 }
 
 .podcast-card-text {
@@ -206,6 +209,7 @@ select,
 
 #nav-icons {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   gap: 25px;
   padding: 10px;
@@ -219,7 +223,7 @@ aside {
   padding-top: 30px;
   padding-bottom: 30px;
   min-height: 100vh;
-   /* position: relative; */
+   position: relative;
     z-index: 1;
 }
 
@@ -280,6 +284,7 @@ aside {
 main {
   flex: 1;
   background-color: #f4f6f9;
+  width: 100%;
 }
 
 #main-content {
@@ -311,6 +316,7 @@ main {
   height: 300px;
   display: flex;
   flex-wrap: wrap;
+  /* flex: 1 1 auto; */
 }
 
 #hero-section p {
@@ -341,11 +347,10 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
+  width: 100%;
 }
 
-.page-section__card-holder.split {
-  background-color: red;
-}
+
 
 .small-icon {
   color: blue;
@@ -379,6 +384,7 @@ main {
 
 .wide-card-text-holder-headings {
   display: flex;
+  flex-wrap: wrap;
   gap: 6px;
   align-items: center;
 }
@@ -429,14 +435,16 @@ main {
   flex-wrap: wrap;
   height: 80%;
   padding: 20px;
-  gap: 6px;
+  /* gap: 6px; */
 }
 
 .narrow-card-headings {
   text-align: left;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
   gap: 10px;
+  width: 50%;
 }
 
 .hollow-action-button {
@@ -488,6 +496,11 @@ main {
     border-right: none;
     border-bottom: 1px solid var(--border-color);
     min-height: auto;
+  }
+
+  .page-section{
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .side-navigation {
