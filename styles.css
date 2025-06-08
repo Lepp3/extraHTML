@@ -365,6 +365,7 @@ main {
 
 .card--wide__upper {
   display: flex;
+  flex-wrap: wrap;
   height: 80%;
   padding: 10px;
   gap: 6px;
@@ -425,6 +426,7 @@ main {
 
 .narrow-card-upper-part {
   display: flex;
+  flex-wrap: wrap;
   height: 80%;
   padding: 20px;
   gap: 6px;
