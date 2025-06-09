@@ -85,15 +85,17 @@ header {
 .card--wide {
   width: 60%;
   flex-wrap: wrap;
+ 
 }
 
 .card--narrow {
   width: 35%;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .card--podcast {
   width: 100%;
+  padding: 10px;
 }
 
 .card__img {
@@ -125,6 +127,7 @@ header {
 .card--wide .card__img {
   height: 200px;
   width: 30%;
+  
 }
 
 .card--wide__info {
@@ -132,7 +135,8 @@ header {
   /* flex-direction: column; */
   flex-wrap: wrap;
   gap: 15px;
-  padding-left: 20px;
+  /* padding-left: 20px; */
+  width: 50%;
 }
 
 .card--narrow .card__img {
@@ -148,8 +152,8 @@ header {
   gap: 5px;
 }
 
-.page-section__headings .page-section__headings__half {
-  width: 50%;
+.page-section__headings__half {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -162,10 +166,11 @@ header {
 
 .page-section--events {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
   justify-content: space-between;
   gap: 40px;
+  
 }
 
 .page-section__card-holder.news {
@@ -180,6 +185,11 @@ header {
   display: flex;
   flex-wrap: wrap;
   flex: 1 1 45%;
+}
+
+.events-part{
+  display: flex;
+  width: 50%;
 }
 
 select,
@@ -319,6 +329,14 @@ main {
   /* flex: 1 1 auto; */
 }
 
+
+.page-section.split{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
 #hero-section p {
   text-align: left;
   font-size: 1.2em;
@@ -371,15 +389,21 @@ main {
 .card--wide__upper {
   display: flex;
   flex-wrap: wrap;
-  height: 80%;
+  /* height: 80%; */
   padding: 10px;
-  gap: 6px;
+  gap: 20px;
 }
 
 .wide-card-text-holder {
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+
+.wide-card-text-holder-content{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .wide-card-text-holder-headings {
@@ -403,17 +427,19 @@ main {
   color: #146ecf;
   background-color: var(--nav-buttons-background-color);
   font-weight: 500;
+  flex: 1 1 auto;
 }
 
 .related-topics {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  gap: 20px;
+  gap: 10px;
 }
 
 .related-topics li {
   border: 1px solid gray;
-  padding: 11px;
+  padding: 10px;
   border-radius: 20px;
   text-align: center;
   align-items: center;
@@ -522,6 +548,10 @@ main {
   .restart {
     margin-left: auto;
   }
+
+  .card--narrow, .card--wide {
+  flex-direction: column;  
+}
 
   
 }
